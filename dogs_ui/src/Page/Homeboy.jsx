@@ -5,8 +5,7 @@ import Task_components from "../Componenets/Task_components";
 import Header_components from "../Componenets/Header_components";
 import Rules_components from "../Componenets/Rules_components";
 import Top_component from "../Componenets/Top_component";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import Wallet_components from "../Componenets/Wallet_components";
 import { useLaunchParams } from "@telegram-apps/sdk-react";
 
 function Homeboy() {
@@ -15,7 +14,9 @@ function Homeboy() {
   return (
     <div className="p-4  text-white flex flex-col min-h-screen overflow-y-auto pb-20 bg-black">
       {/* Wallet connect Componenets */}
-      <Top_component />
+      <Top_component>
+        <Wallet_components />
+      </Top_component>
 
       <p className="text-base font-bold mb-2 mt-4">Progress</p>
 
@@ -63,7 +64,6 @@ function Homeboy() {
 
       <Rules_components rule="Reward depends on the amount of MOGG and how long you have held it" />
 
-      <ToastContainer />
     </div>
   );
 }

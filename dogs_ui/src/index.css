@@ -22,3 +22,15 @@
     display: none; /* Chrome, Safari, and Opera */
   }
   
+.wallet-adapter-modal-wrapper {
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 28 30 / var(--tw-bg-opacity));
+  }
+
+  .wallet-adapter-modal-button-close {
+    background-color: black;
+    opacity: .3;
+  }
+  .wallet-adapter-button-trigger {
+    background-color: transparent;
+  }

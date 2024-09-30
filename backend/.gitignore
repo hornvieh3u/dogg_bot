@@ -1,0 +1,4 @@
+node_modules
+auth.txt
+package-lock.json
+/src/.env

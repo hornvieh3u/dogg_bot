@@ -1,15 +1,11 @@
 import React from 'react'
-import { FaWallet } from "react-icons/fa6";
 import dogsboy from "../assets/sk.jpg";
 
-const Top_component = ({onClick}) => {
+const Top_component = ({children}) => {
   return (
     <div className="w-full shadow shadow-white bg-[#1c1c1e]  flex items-center justify-center flex-col p-4 rounded-xl">
-        <div className="flex bg-black pl-3 pr-3 pt-1 pb-1 rounded-md cursor-pointer">
-          <div className="mr-1">
-            <FaWallet color="white" />
-          </div>
-          <div className="text-sm text-white">Connect Wallet</div>
+        <div className="flex">
+          {children}
         </div>
 
         <div className="mt-4">

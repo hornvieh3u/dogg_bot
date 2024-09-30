@@ -1,8 +1,7 @@
 import React from "react";
 import boy from "../assets/sk.jpg";
 import copy from "copy-to-clipboard";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 
 function Invite() {
   const refLink = `https://t.me/Dogs_Holders_Club_bot/dogs_holders?start`;
@@ -70,8 +69,6 @@ function Invite() {
       >
         Copy link for friends
       </div>
-
-      <ToastContainer />
     </div>
   );
 }
